@@ -1,0 +1,16 @@
+- name: Update & Upgrade Package Ubuntu
+  host: 
+  - ec2
+  tasks: 
+    #- name: add repository
+    #  apt_repository:
+    #    repo: deb http://archive.canonical.com/ubuntu hardy partner
+    #    state: present
+    - name: Update Package
+      apt: update_cache=yes
+
+    - name: Upgrade packages
+      apt: upgrade=dist
+
+    - name: unattended-upgrades (Security)
+      apt: name=unattended-upgrades
