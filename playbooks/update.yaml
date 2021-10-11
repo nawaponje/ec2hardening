@@ -13,3 +13,7 @@
 
     - name: unattended-upgrades (Security)
       apt: name=unattended-upgrades
+
+    - name: set timezone
+      timezone:
+        name: Asia/Bangkok
