@@ -1,6 +1,5 @@
 - name: Update & Upgrade Package Ubuntu
-  host: 
-  - ec2
+  hosts: ec2
   tasks: 
     #- name: add repository
     #  apt_repository:
