@@ -1,0 +1,5 @@
+ - name: Update OS Version LTS
+   hosts: ec2
+   tasks: 
+     - name: Update Version LTS
+       command: do-release-upgrade -f DistUpgradeViewNonInteractive
