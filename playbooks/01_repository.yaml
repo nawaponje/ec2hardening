@@ -1,0 +1,7 @@
+# - name: Add repository
+#   hosts: ec2
+#   tasks: 
+#     - name: add repository
+#       apt_repository:
+#         repo: deb http://archive.canonical.com/ubuntu hardy partner
+#         state: present

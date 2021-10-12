@@ -1,0 +1,11 @@
+- name: Update & Upgrade Package Ubuntu
+  hosts: ec2
+  tasks: 
+    - name: Update Package
+      apt: update_cache=yes
+
+    - name: Upgrade packages
+      apt: upgrade=dist
+
+    - name: unattended-upgrades (Security)
+      apt: name=unattended-upgrades
