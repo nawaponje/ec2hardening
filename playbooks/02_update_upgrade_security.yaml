@@ -7,5 +7,5 @@
     - name: Upgrade packages
       apt: upgrade=dist
 
-    - name: unattended-upgrades (Security)
+    - name: Unattended-upgrades (Security)
       apt: name=unattended-upgrades

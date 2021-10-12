@@ -1,9 +1,9 @@
 - name: Sync TimeZone Date NTP 
   hosts: ec2
   tasks: 
-    - name: set timezone
+    - name: Set timezone
       timezone:
         name: Asia/Bangkok
-        
+
     - name: Check ntp is started and Set enabled on boot.
       service: name=ntp state=started enabled=yes
